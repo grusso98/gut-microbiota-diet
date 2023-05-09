@@ -1,4 +1,6 @@
 *.txt
 /fastq
 /sratoolkit.3.0.1-win64
+/good_quality_20
+/dataS
 *.csv
