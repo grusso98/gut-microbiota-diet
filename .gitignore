@@ -6,3 +6,4 @@
 *.csv
 /fastq_control
 /fastq_treatment
+*.tsv
