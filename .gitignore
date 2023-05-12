@@ -7,3 +7,4 @@
 /fastq_control
 /fastq_treatment
 *.tsv
+*.yml
