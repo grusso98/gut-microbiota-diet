@@ -8,3 +8,6 @@
 *.tsv
 *.yml
 /data_eda
+*.qza
+*.qzv
+*.log
