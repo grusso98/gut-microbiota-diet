@@ -1,10 +1,9 @@
 *.txt
 /fastq
 /sratoolkit.3.0.2-win64
+/sratoolkit.3.0.5-ubuntu64
 /good_quality_20
 /dataS
 *.csv
-/fastq_control
-/fastq_treatment
 *.tsv
 *.yml
