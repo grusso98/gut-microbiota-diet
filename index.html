@@ -6,11 +6,25 @@
 <body>
     <h1>Embedded Pages</h1>
     
-    <iframe src="htmls/lda2_sugar.html" frameborder="0" width="100%" height="300"></iframe>
-    <iframe src="htmls/lda4_sugar.html" frameborder="0" width="100%" height="300"></iframe>
-    <iframe src="htmls/lda2_human.html" frameborder="0" width="100%" height="300"></iframe>
-    <iframe src="htmls/lda4_human.html" frameborder="0" width="100%" height="300"></iframe>
+    <div id="pageContainer"></div>
+
+    <script>
+        function loadPage(url) {
+            var container = document.getElementById("pageContainer");
+            var iframe = document.createElement("iframe");
+            iframe.src = url;
+            iframe.style.width = "100%";
+            iframe.style.height = "300px";
+            container.appendChild(iframe);
+        }
+
+        loadPage("htmls/lda2_sugar.html");
+        loadPage("htmls/lda4_sugar.html");
+        loadPage("htmls/lda2_human.html");
+        loadPage("htmls/lda4_human.html");
+    </script>
 </body>
 </html>
+
 
 
