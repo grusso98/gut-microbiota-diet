@@ -1,4 +1,3 @@
-### Relationships between different diets and gut microbiota
 ### Authors:
   <div align="center">
     <p>Gaetano Chiriaco</p>
