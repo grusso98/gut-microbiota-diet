@@ -36,3 +36,5 @@ Part of the Data science lab in biosciences exam.
   - queries without the word 'human'
  
 - *text_extraction-ipynb* contains the code to download the papers analyzed in the LDA notebook 
+- htmls contain the visualizations created with pyLDAvis easily accessible through the github page:
+<a href="https://grusso98.github.io/gut-microbiota-diet/" style="text-decoration:none;"></a>
