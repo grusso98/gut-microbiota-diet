@@ -8,6 +8,14 @@
             height: 1000px;
             border: none;
         }
+        .visualizationContainer {
+            margin-bottom: 20px;
+        }
+        .visualizationTitle {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -16,18 +24,28 @@
     <div id="pageContainer"></div>
 
     <script>
-        function loadPage(url) {
+        function loadPage(url, title) {
             var container = document.getElementById("pageContainer");
+            var visualizationContainer = document.createElement("div");
+            visualizationContainer.className = "visualizationContainer";
+
+            var visualizationTitle = document.createElement("h2");
+            visualizationTitle.className = "visualizationTitle";
+            visualizationTitle.innerText = title;
+
             var iframe = document.createElement("iframe");
             iframe.src = url;
             iframe.className = "pageFrame";
-            container.appendChild(iframe);
+
+            visualizationContainer.appendChild(visualizationTitle);
+            visualizationContainer.appendChild(iframe);
+            container.appendChild(visualizationContainer);
         }
-        document.write('<h1>'+LDA 2 Topics on query without Human+'</h1>');
-        loadPage("htmls/lda2_sugar.html");
-        loadPage("htmls/lda4_sugar.html");
-        loadPage("htmls/lda2_human.html");
-        loadPage("htmls/lda4_human.html");
+
+        loadPage("htmls/lda2_sugar.html", "LDA with 2 topics on query results without Human");
+        loadPage("htmls/lda4_sugar.html", "LDA with 4 topics on query results without Human");
+        loadPage("htmls/lda2_human.html", "LDA with 2 topics on query results with Human");
+        loadPage("htmls/lda4_human.html", "LDA with 4 topics on query results with Human");
     </script>
 </body>
 </html>
