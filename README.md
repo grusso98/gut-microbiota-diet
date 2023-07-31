@@ -1,3 +1,4 @@
+![alt text](https://github.com/grusso98/gut-microbiota-diet/blob/main/img/biosciences_banner.png?raw=true)
 ### Authors:
   <div align="center">
     <p>Gaetano Chiriaco</p>
